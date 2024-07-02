@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Ingrese su tipo de patrón.\n1. Estructural.\n2. Creacional.\n3. Comportamiento");
+            Console.WriteLine("Ingrese su tipo de patrón.\n1. Estructural.\n2. Creacional.\n3. Comportamiento.\n4. Otros.");
 
             if (int.TryParse(Console.ReadLine(), out int opcion))
             {
@@ -15,7 +15,7 @@
                     case 1: MostrarMenuEstructural(); break;
                     case 2: MostrarMenuCreacional(); break;
                     case 3: MostrarMenuComportamiento(); break;
-                    case 66: MasPatrones(); break;
+                    case 4: MasPatrones(); break;
                     default:
                         Console.WriteLine("Opción no válida.");
                         break;
@@ -127,15 +127,15 @@
 
                 switch (opcion)
                 {
-                    case 1: new Other.Concurrency.ProducerConsumer.Program().Main(); break;
-                    case 2: new Other.Concurrency.ReadWriteLock.Program().Main(); break;
-                    case 3: new Other.Concurrency.ThreadPool.Program().Main(); break;
-                    case 4: new Other.Architectural.MVC.Program().Main(); break;
+                    case 1: new Concurrency.ProducerConsumer.Program().Main(); break;
+                    case 2: new Concurrency.ReadWriteLock.Program().Main(); break;
+                    case 3: new Concurrency.ThreadPool.Program().Main(); break;
+                    case 4: new Architectural.MVC.Program().Main(); break;
                     case 5: // MVVM - Solo en WPF.
                     case 6: // Microservicios - Solo con AspNet
-                    case 7: new Other.Architectural.ServiceOrientedArchitecture.Program().Main(); break;
-                    case 8: new Other.Domain.Repository.Program().Main(); break;
-                    case 9: new Other.Domain.UnitOfWork.Program().Main(); break;
+                    case 7: new Architectural.SOA.Program().Main(); break;
+                    case 8: new Domain.Repository.Program().Main(); break;
+                    case 9: new Domain.UnitOfWork.Program().Main(); break;
                     case 10: // Domain Model - Es solo muestra.
                     default:
                         Console.WriteLine("Opción no válida.");

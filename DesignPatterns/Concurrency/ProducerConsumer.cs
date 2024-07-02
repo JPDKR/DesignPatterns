@@ -1,6 +1,6 @@
 ﻿using System.Collections.Concurrent;
 
-namespace DesignPatterns.CSharp.Other.Concurrency.ProducerConsumer
+namespace DesignPatterns.CSharp.Concurrency.ProducerConsumer
 {
     // Este patrón coordina la producción de tareas y su consumo por uno o más consumidores.
     public class ProducerConsumer

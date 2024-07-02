@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.CSharp.Other.Concurrency.ThreadPool;
+﻿namespace DesignPatterns.CSharp.Concurrency.ThreadPool;
 
 using System.Threading;
 

@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.CSharp.Other.Domain.DomainModel
+﻿namespace DesignPatterns.CSharp.Domain
 {
     // Se centra en la representación de objetos del dominio y su lógica de negocio.
 
